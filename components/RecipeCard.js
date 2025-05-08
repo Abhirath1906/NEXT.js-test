@@ -7,14 +7,14 @@ export default function RecipeCard({ recipe }) {
       
     
       
-      {/* Image display */}
+      
       <Image
       style={{marginBottom:"20px"}}
         src={recipe.image || 'https://via.placeholder.com/250'}
         alt={recipe.name}
-        width={250}
-        height={150}
-        layout="responsive"
+        width={368}
+        height={350}
+        // layout="responsive"
         
       />
        <Link className='nameFood' href={`/recipes/${recipe.id}`}>{recipe.name}</Link>

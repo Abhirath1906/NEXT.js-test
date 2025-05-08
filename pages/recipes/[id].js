@@ -5,7 +5,7 @@ export async function getServerSideProps({ params }) {
 
     if (!res.ok) {
         return {
-            notFound: true,
+            notFound: false,
         };
     }
 

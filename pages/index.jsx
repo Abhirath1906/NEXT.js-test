@@ -10,9 +10,9 @@ export async function getStaticProps() {
 
   return {
     props: {
-      recipes: data.recipes.slice(0, 9), // Featured 6
+      recipes: data.recipes.slice(0, 9), 
     },
-    revalidate: 30, // ISR
+    revalidate: 30, 
   };
 }
 
